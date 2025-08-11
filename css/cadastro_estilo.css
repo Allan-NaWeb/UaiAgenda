@@ -21,14 +21,25 @@ body {
     padding-left: 10px;
 }
 
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .conteudo {
+    padding: 20px;
+    height: auto;
+    min-height: calc(100vh - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 button {
-    width: 220px;
+    width: 100%;
+    max-width: 220px;
     padding: 12px 0;
     font-size: 18px;
     border: none;
@@ -46,11 +57,23 @@ label {
 }
 
 input {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    .menu {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    button {
+        font-size: 16px;
+    }
 }

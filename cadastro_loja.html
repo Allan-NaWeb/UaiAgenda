@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cadastro_estilo.css">
-    <title>Criar Conta</title>
+    <title>Criando Sua Loja</title>
 </head>
 <body>
     <header>
         <nav class="menu">
-            Criar Conta
+            Criar Loja
         </nav>
     </header>
-    
+
     <main class="conteudo">
         <form method="POST" action="#">
-            <label><strong>Sobre mim</strong></label><br><br>
+            <label><strong>Dados do seu Negócio</strong></label><br><br>
 
-            <label>Nome:</label><br>
+            <label>Nome do Loja:</label><br>
             <input type="text" required><br>
 
-            <label>Sobrenome:</label><br>
-            <input type="text" required><br>
+            <label>CNPJ:</label><br>
+            <input type="number" required><br>
 
             <label>E-Mail:</label><br>
             <input type="email" required><br>
@@ -35,8 +35,24 @@
             <label>Digite sua Senha Novamente:</label><br>
             <input type="password" required><br><br>
 
-            <button>Criar Conta</button><br><br><br>
+            <label><strong>Localização da sua Loja</strong></label><br><br>
 
+            <label>Estado:</label><br>
+            <input type="text" required><br>
+
+            <label>Cidade:</label><br>
+            <input type="text" required><br>
+
+            <label>Bairro:</label><br>
+            <input type="text" required><br>
+
+            <label>Número:</label><br>
+            <input type="number" required><br>
+
+            <label>Complemento:</label><br>
+            <input type="text" required><br><br>
+
+            <button>Criar Loja</button><br><br><br>
         </form>
     </main>
 </body>

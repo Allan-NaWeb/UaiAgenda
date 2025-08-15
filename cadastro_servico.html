@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro_estilo.css">
+    <title>Cadastrar Serviços</title>
+</head>
+<body>
+    <header>
+         <nav class="menu">
+            Seus Serviços
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <form method="POST" action="#">
+            <label><strong>Cadastrar Serviço</strong></label><br><br>
+
+            <label>Nome do Serviço:</label><br>
+            <input type="text" required><br>
+
+            <label>Nome do Profissional:</label><br>
+            <input type="text" required><br>
+
+            <label>Valor do Serviço:</label><br>
+            <input type="number" placeholder="R$" required><br><br>
+
+            <label><strong>Agenda Disponível</strong></label><br><br>
+
+            <label>Dia da Semana:</label><br><br>
+            <label><input type="checkbox" name="domingo" value="domingo" class="dia">Domingo</label><br>
+            <label><input type="checkbox" name="segunda-Feira" value="segunda-Feira" class="dia">Segunda-Feira</label><br>
+            <label><input type="checkbox" name="terca-feira" value="terca-feira" class="dia">Terça-Feira</label><br>
+            <label><input type="checkbox" name="quarta-feira" value="quarta-feira" class="dia">Quarta-Feira</label><br>
+            <label><input type="checkbox" name="quinta-feira" value="quinta-feira" class="dia">Quinta-Feira</label><br>
+            <label><input type="checkbox" name="sexta-feira" value="sexta-feira" class="dia">Sexta-Feira</label><br>
+            <label><input type="checkbox" name="sabado" value="sabado" class="dia">Sábado</label><br>
+            <label><input type="checkbox" id="checkTodos"> Selecionar Todos os Dias</label><br><br>
+
+            <label><strong>Horários Disponíveis</strong></label><br><br>
+            <div class="horarios">
+                <label><input type="checkbox" class="horario" value="06:00">06:00</label>
+                <label><input type="checkbox" class="horario" value="06:30">06:30</label>
+                <label><input type="checkbox" class="horario" value="07:00">07:00</label>
+                <label><input type="checkbox" class="horario" value="07:30">07:30</label>
+                <label><input type="checkbox" class="horario" value="08:00">08:00</label>
+                <label><input type="checkbox" class="horario" value="08:30">08:30</label>
+                <label><input type="checkbox" class="horario" value="09:00">09:00</label>
+                <label><input type="checkbox" class="horario" value="09:30">09:30</label>
+                <label><input type="checkbox" class="horario" value="10:00">10:00</label>
+                <label><input type="checkbox" class="horario" value="10:30">10:30</label>
+                <label><input type="checkbox" class="horario" value="11:00">11:00</label>
+                <label><input type="checkbox" class="horario" value="11:30">11:30</label>
+                <label><input type="checkbox" class="horario" value="12:00">12:00</label>
+                <label><input type="checkbox" class="horario" value="12:30">12:30</label>
+                <label><input type="checkbox" class="horario" value="13:00">13:00</label>
+                <label><input type="checkbox" class="horario" value="13:30">13:30</label>
+                <label><input type="checkbox" class="horario" value="14:00">14:00</label>
+                <label><input type="checkbox" class="horario" value="14:30">14:30</label>
+                <label><input type="checkbox" class="horario" value="15:00">15:00</label>
+                <label><input type="checkbox" class="horario" value="15:30">15:30</label>
+                <label><input type="checkbox" class="horario" value="16:00">16:00</label>
+                <label><input type="checkbox" class="horario" value="16:30">16:30</label>
+                <label><input type="checkbox" class="horario" value="17:00">17:00</label>
+                <label><input type="checkbox" class="horario" value="17:30">17:30</label>
+                <label><input type="checkbox" class="horario" value="18:00">18:00</label>
+                <label><input type="checkbox" class="horario" value="18:30">18:30</label>
+                <label><input type="checkbox" class="horario" value="19:00">19:00</label>
+                <label><input type="checkbox" class="horario" value="19:30">19:30</label>
+                <label><input type="checkbox" class="horario" value="20:00">20:00</label>
+                <label><input type="checkbox" class="horario" value="20:30">20:30</label>
+                <label><input type="checkbox" class="horario" value="21:00">21:00</label>
+                <label><input type="checkbox" class="horario" value="21:30">21:30</label>
+                <label><input type="checkbox" class="horario" value="22:00">22:00</label>
+                <label><input type="checkbox" class="horario" value="22:30">22:30</label>
+                <label><input type="checkbox" class="horario" value="23:00">23:00</label>
+            </div>
+
+            <button>Cadastrar Serviço</button>
+        </form>
+    </main>
+
+    <script>
+        const checkTodos = document.getElementById('checkTodos');
+         const checkboxesDias = document.querySelectorAll('.dia');
+
+        checkTodos.addEventListener('change', function () {
+         checkboxesDias.forEach(cb => cb.checked = this.checked);
+          });
+    </script>
+
+</body>
+</html>
